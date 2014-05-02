@@ -117,7 +117,6 @@ module.exports = function(app) {
 	
 	app.get('/post', checkLogin);
   app.get('/post', function (req, res) {
-		
 	  res.render('post', { 
 			title: '发表',
 			user: req.session.user,
